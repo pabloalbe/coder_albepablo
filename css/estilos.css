@@ -99,6 +99,10 @@ main {
     transform: scale(1.1);
 }
 
+.art__imagenreclamo:hover{
+    transform: scale(1.1);
+}
+
 /* APLICADA A TODOS LOS h1 */
 @keyframes titulos {
     0%{color: rgb(255, 94, 0);}
@@ -186,7 +190,7 @@ footer{
 }
 art__imagenreclamo{
     margin: 1rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 
