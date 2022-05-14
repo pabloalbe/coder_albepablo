@@ -91,8 +91,12 @@ main {
 }
 
 /* ANIMACIONES PARA ENTREGA */
-.portada__imagen:hover{
+.portada__img:hover{
     transform: scale(1.2);
+}
+
+.cotizador__img:hover{
+    transform: scale(1.1);
 }
 
 /* APLICADA A TODOS LOS h1 */
@@ -127,15 +131,19 @@ footer{
     align-self: center;
 }
 
+.acceso__formulario{
+    align-items: center;
+    padding: 1rem;
+    
+}
 .acceso__seccion {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-self: center;
     width: 100%;
-
-    
-    
 }
+
 .acceso__logo {
     max-width: fit-content;
     align-self: center;
@@ -143,7 +151,7 @@ footer{
 
 .acceso__formulario{
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 16px;
     padding-bottom: 1rem;
