@@ -96,7 +96,11 @@ main {
 }
 
 .cotizador__img:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
+}
+
+.art__imagenreclamo:hover{
+    transform: scale(1.2);
 }
 
 /* APLICADA A TODOS LOS h1 */
@@ -112,7 +116,7 @@ body{
 
 textarea{
     display: flex;
-    margin: 1rem;
+    margin: 2rem;
     flex-direction: column;
     height: 30vh;
     width: 60vw;
@@ -186,7 +190,7 @@ footer{
 }
 art__imagenreclamo{
     margin: 1rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 
