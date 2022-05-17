@@ -58,6 +58,10 @@ li{
     font-weight: bold;
 }
 
+.bg-header {
+    background-color: white;
+}
+
 h1{
     grid-area: h1;
     text-align: center;
@@ -69,14 +73,15 @@ h1{
     animation-iteration-count: 1;
 }
 
-main {
+
+
+.main__index {
     grid-area: main;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     align-content: center;
     grid-area: main;
-    align-items: center;
 }
 
 .portada__main{
@@ -95,10 +100,10 @@ main {
     transform: scale(1.2);
 }
 
-.cotizador__img:hover{
+/* .cotizador__img:hover{
     transform: scale(1.1);
 }
-
+ */
 /* APLICADA A TODOS LOS h1 */
 @keyframes titulos {
     0%{color: rgb(255, 94, 0);}
@@ -110,20 +115,21 @@ body{
     background-color:rgb(255, 94, 0)
 }
 
-textarea{
+/* textarea{
     display: flex;
     margin: 1rem;
     flex-direction: column;
     height: 30vh;
     width: 60vw;
-}
+} */
 
 footer{
     grid-area: footer;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;    
+    width: 50px;
+    height: 50px;
+
 }
 
 /* ACCESO */
@@ -135,6 +141,10 @@ footer{
     align-items: center;
     padding: 1rem;
     
+}
+
+.acceso__ubicacion{
+    justify-content: left;
 }
 .acceso__seccion {
     display: flex;
@@ -162,6 +172,31 @@ footer{
     display: flex;
     align-self: center;
 }
+
+.div__acceso{
+    align-items: left;
+}
+
+/* CONSULTA */
+.form__consulta {
+    width: 30rem;
+}
+
+.main__contacto{
+    padding: 1rem;
+}
+
+.form__acceso{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.img__contacto{
+    align-items: center;
+    margin: 1rem;
+}
+
+
 /* COTIZADOR */
 .section__cotizador{
     display: flex;
@@ -173,9 +208,10 @@ footer{
     padding: 1rem;
 }
 .cotizador__img{
-    display: flex;
+    /* display: flex; */
     align-self: center;
     align-items: center;
+    justify-content: center;
 }
 
 /* ART */
@@ -189,6 +225,11 @@ art__imagenreclamo{
     padding: 1rem;
 }
 
+.div__art{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 /* MEDIA QUERIES */
 @media (min-width: 320px) and (max-width: 540px){

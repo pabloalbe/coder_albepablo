@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="shortcut icon" href="recursos/favicon-16x16.png">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/estilos.css">
     <title>AP Productor Asesor</title>
 </head>
 <body class="grid__principal">
     <header>
+<!-- 
         <nav class="header__menu">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -18,19 +22,86 @@
                 <li><a href="paginas/cotizador.html">Cotiza tu Seguro</a></li>
                 <li><a href="paginas/portalart.html">Portal ART</a></li>
             </ul> 
+        </nav> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-header">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="recursos/logochico.png" alt="" width="30" height="24">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paginas/acceso.html">Acceso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paginas/contacto.html">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paginas/cotizador.html">Cotizador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paginas/portalart.html">Portal ART</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
         </nav>
-    </header>    
-    <h1> Una Cobertura a tu Medida</h1>
-    <main class="portada__main">         
+    </header>
+    <h1>Una Cobertura Para cada Necesidad</h1>
+    <main class="container main__index">
+<!--         <section>
+            <h1> Una Cobertura a tu Medida</h1>
+        </section> -->
+    <!-- <main class="portada__main">         
         <section class="portada__img">
         <img src="recursos/logogrande.png" alt="logoseguros">
         </section>
-    </main>
-
+    </main> -->
+    <div class="row">
+        <section class="col container-fluid">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../coder_albepablo/recursos/seghogar.jpg" class="d-block w-100" alt="seghogar">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../coder_albepablo/recursos/segauto.jpg" class="d-block w-100" alt="segempresas">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../coder_albepablo/recursos/seguroempresas.jpg" class="d-block w-100" alt="siniestros">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="col">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nihil quae similique ab assumenda ipsa fugiat consectetur et dolorum, sequi, molestias eum facere! Ratione, maiores! Voluptate esse dolores ab exercitationem!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos cumque vero rerum sit doloremque voluptatibus officia sint doloribus vel, at, repudiandae harum sapiente commodi maxime officiis molestias tempore, obcaecati aspernatur.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos cumque vero rerum sit doloremque voluptatibus officia sint doloribus vel, at, repudiandae harum sapiente commodi maxime officiis molestias tempore, obcaecati aspernatur.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos cumque vero rerum sit doloremque voluptatibus officia sint doloribus vel, at, repudiandae harum sapiente commodi maxime officiis molestias tempore, obcaecati aspernatur.</p>
+        </section>
+    </div>
+        
+    </main>    
     <footer>
             <img src="recursos/whatsapp.png" alt="logowhatsapp">
             <img src="recursos/instagram.png" alt="logoinstagram">
-            <img src="recursos/derechos.png" alt="derechos">
+            <img src="recursos/ssn-logo.png" alt="logossn">
     </footer>
+<!-- SCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
