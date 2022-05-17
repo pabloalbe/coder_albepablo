@@ -100,10 +100,6 @@ h1{
     transform: scale(1.2);
 }
 
-/* .cotizador__img:hover{
-    transform: scale(1.1);
-}
- */
 /* APLICADA A TODOS LOS h1 */
 @keyframes titulos {
     0%{color: rgb(255, 94, 0);}
@@ -117,7 +113,7 @@ body{
 
 /* textarea{
     display: flex;
-    margin: 1rem;
+    margin: 2rem;
     flex-direction: column;
     height: 30vh;
     width: 60vw;
@@ -222,7 +218,7 @@ footer{
 }
 art__imagenreclamo{
     margin: 1rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .div__art{
