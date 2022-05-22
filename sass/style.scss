@@ -3,7 +3,9 @@
     padding: 0px;
 }
 
-
+body{
+    background-color:rgb(255, 94, 0)
+}
 .grid__principal {
     display: grid;
     background-color:rgb(255, 94, 0);
@@ -107,9 +109,7 @@ h1{
     }
 
 
-body{
-    background-color:rgb(255, 94, 0)
-}
+
 
 footer{
     grid-area: footer;
