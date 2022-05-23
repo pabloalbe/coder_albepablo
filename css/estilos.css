@@ -4,13 +4,12 @@
 
 body {
   background-color: #ff5e00; }
-
-.grid__principal {
-  display: grid;
-  background-color: #ff5e00;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "header header header"     "h1 h1 h1" "main main main" "footer footer footer";
-  gap: 16px; }
+  body__grid {
+    display: grid;
+    background-color: #ff5e00;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header header header"     "h1 h1 h1" "main main main" "footer footer footer";
+    gap: 16px; }
 
 header {
   grid-area: header;
@@ -27,25 +26,18 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-right: 20px; }
+  .header__menu ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    /* MODIFICAR FUENTE */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 20px; }
 
-ul {
-  display: flex;
-  list-style-type: none;
-  flex-direction: row; }
-
-li {
+a:hover {
   font-family: Arial, Helvetica, sans-serif;
   /* MODIFICAR FUENTE */
   text-decoration: none;
   color: black;
-  font-weight: bold;
-  margin: 0 20px; }
-
-.header__menu ul li a:hover {
-  font-family: Arial, Helvetica, sans-serif;
-  /* MODIFICAR FUENTE */
-  text-decoration: none;
-  color: #ff5e00;
   font-weight: bold; }
 
 .bg-header {
@@ -79,6 +71,9 @@ h1 {
   display: flex;
   justify-content: center;
   width: 100%; }
+
+.texto__informacion {
+  font-size: 25px; }
 
 /* ANIMACIONES PARA ENTREGA */
 .portada__img:hover {
@@ -160,22 +155,16 @@ footer {
   align-items: center;
   margin: 1rem;
   padding: 1rem; }
-
-.cotizador__img {
-  /* display: flex; */
-  align-self: center;
-  align-items: center;
-  justify-content: center; }
+  .section__cotizador .cotizador__img {
+    align-self: center;
+    align-items: center;
+    justify-content: center; }
 
 /* ART */
 .main__art {
   display: flex;
   flex-direction: row;
   margin: 1rem; }
-
-art__imagenreclamo {
-  margin: 1rem;
-  padding: 2rem; }
 
 .div__art {
   display: flex;
@@ -184,7 +173,7 @@ art__imagenreclamo {
 
 /* MEDIA QUERIES */
 @media (min-width: 320px) and (max-width: 540px) {
-  .grid__principal {
+  .body__grid {
     grid-template-columns: 1fr;
     grid-template-areas: "header " "h1 " "main " "footer "; }
   header {
@@ -196,6 +185,8 @@ art__imagenreclamo {
     align-items: center;
     flex-wrap: wrap;
     width: 100%; }
+  footer {
+    flex-direction: column; }
   .header__menu ul {
     display: flex;
     flex-direction: column;
@@ -226,7 +217,7 @@ art__imagenreclamo {
     flex-direction: column; } }
 
 @media (min-width: 541px) and (max-width: 721px) {
-  .grid {
+  .body__grid {
     grid-template-columns: 1fr;
     grid-template-areas: "header header " "titulo titulo " "main main " "footer footer "; }
   header {
@@ -255,6 +246,8 @@ art__imagenreclamo {
   .acceso__seccion {
     display: flex;
     flex-direction: column; }
+  .texto__informacion {
+    font-size: 8px; }
   .contacto__main {
     display: flex;
     flex-direction: column; }
