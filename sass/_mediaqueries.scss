@@ -1,0 +1,133 @@
+/* MEDIA QUERIES */
+
+@media (min-width: 320px) and (max-width: 540px){
+    .body__grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header "
+        "h1 "
+        "main "
+        "footer ";
+
+        header{
+            grid-area: header;
+            display: flex;
+            flex-direction: column;
+            background-color:$color-backheader;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            
+            &__menu ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                background-color:$color-backheader;
+                align-items: center;
+                flex-wrap: wrap;
+                li {
+                    font-size: 0.5rem;
+                }
+            }
+            
+        }
+        footer{
+            flex-direction: row;
+        }
+        
+        h1{
+            font-size: 0,5rem;
+            align-items: center;
+        }
+
+        portada__main{
+            grid-area: main;
+            display: flex;
+            flex-direction: column;
+            &__main{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .acceso__seccion{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .main__cotizador{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .main__art{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+
+@media (min-width: 541px) and (max-width: 721px){
+    .body__grid{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header header "
+        "titulo titulo "
+        "main main "
+        "footer footer ";
+        header{
+            grid-area: header;
+            display: flex;
+            background-color:$color-backheader;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            }
+            
+        .header__menu ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                background-color:$color-backheader;
+                align-items:center;
+                flex-wrap: wrap;
+                li {
+                    font-size: 12px;
+                }
+            }
+
+        main{
+                grid-area: main;
+                display: flex;
+                flex-direction: column;
+            }
+
+        footer{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .acceso__seccion{
+            display: flex;
+            flex-direction: column;
+        }
+        .texto__informacion{
+            font-size: 8px;
+        }
+    .contacto__main{
+            display: flex;
+            flex-direction: column;
+        }
+    .main__cotizador{
+        display: flex;
+        flex-direction: column;
+    }
+    .main__art{
+        display: flex;
+        flex-direction: column;
+    }
+    }
+
+} 
